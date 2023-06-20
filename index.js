@@ -29,8 +29,9 @@ app.post('/api/v1/quiz', function (req, res) {
     }
   })
   
-
-app.listen(3000, function(){
+//実行環境（Heroku）のポートを参照
+const PORT = process.env.PORT || 3000
+app.listen(PORT, function(){
     console.log("I am running!")
 })
 
